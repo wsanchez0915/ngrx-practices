@@ -6,5 +6,20 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
+
+  contador: number;
+
+  constructor(){
+    this.contador = 10;
+  }
+
   title = 'practicas-redux';
+
+  incrementar(){
+    this.contador ++;
+  }
+
+  decrementar(){
+    this.contador --;
+  }
 }
