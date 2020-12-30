@@ -19,7 +19,7 @@ import { environment } from '../environments/environment';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    StoreModule.forRoot({contador: contadorReducer}, {}),
+    StoreModule.forRoot({contador: contadorReducer}),
     StoreDevtoolsModule.instrument({ maxAge: 25, logOnly: environment.production })
   ],
   providers: [],
